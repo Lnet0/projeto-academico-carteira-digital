@@ -6,8 +6,7 @@ O repositório contém:
 
 1. Desenvolvimento web com PHP de uma Carteira Digital
 
-O site foi desenvolvido em HTML, CSS(tailwild) e PHP, no VScode e hospedado no github em:                                                                          
-
+O aplicação foi desenvolvida em HTML, CSS(tailwild) e PHP, no VScode.                                                                       
 
 ---
 
