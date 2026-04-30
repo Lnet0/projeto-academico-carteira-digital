@@ -28,4 +28,8 @@
         header('Location: historico.php');
         exit;
     }
+
+    function validarHistorico(){
+        return $_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['descricao']) && !empty($_POST['valor']);
+    }
 ?>

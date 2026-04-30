@@ -13,7 +13,9 @@
         $_SESSION['historico'] = [];
     }
 
-    if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['descricao']) && !empty($_POST['valor'])) {
+    include "funcoes.php";
+
+    if(validarHistorico()){
         $_SESSION['historico'][] = [
             date_default_timezone_set('America/Sao_paulo'),
             'data'      => date('d/m/Y - H:i'),
@@ -23,7 +25,6 @@
         ];
     }
     
-    include "funcoes.php";
     informaReceitaOuDespesa();
     saldo();
 ?>
