@@ -7,6 +7,9 @@
         header("Location: index.php");
         exit();
     }
+
+    $usuario = $_POST["nome"] ?? null;
+    $senha = $_POST["senha"] ?? null;
         
     if($_SERVER["REQUEST_METHOD"] == "POST") {
             
@@ -61,13 +64,13 @@
                     </div>
 
                     <div>
-                        <label for="nome" class="mb-2 block text-sm font-medium text-slate-200">Nome</label>
-                        <input type="text" name="nome" placeholder="Insira seu nome" class="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20">
+                        <label for="nome" class="mb-2 block text-sm font-medium text-slate-200">Usuário</label>
+                        <input type="text" name="nome" placeholder="Digite seu usuário" class="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20">
                     </div>
 
                     <div>
                         <label for="senha" class="mb-2 block text-sm font-medium text-slate-200">Senha</label>
-                        <input type="text" name="senha" placeholder="Insira sua senha" class="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20">
+                        <input type="password" name="senha" placeholder="Digite sua senha" class="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20">
                     </div>
 
                     <?php 
